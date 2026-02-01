@@ -1,5 +1,5 @@
 import { AppRouter } from "./server/appRouter";
-import { HelloWorldController } from "./server/controllers/AuthController";
+import { HelloWorldController } from "./server/controllers/HelloWorldController";
 
 const PORT = 3001;
 
