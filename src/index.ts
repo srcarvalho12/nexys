@@ -1,9 +1,9 @@
-import { AppRouter } from "./server/appRouter";
+import { Nexys } from "./server/Nexys";
 import { HelloWorldController } from "./server/controllers/HelloWorldController";
 
 const PORT = 3001;
 
-const app = new AppRouter();
+const app = new Nexys();
 app.addController(HelloWorldController);
 app.init(PORT);
 

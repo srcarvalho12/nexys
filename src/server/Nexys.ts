@@ -1,7 +1,7 @@
 import Elysia, { AnyElysia } from "elysia";
 import index from '../app/index.html'
 
-export class AppRouter {
+export class Nexys {
     public app: Elysia;
     constructor() {
         this.app = new Elysia({
