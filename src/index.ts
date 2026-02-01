@@ -1,7 +1,12 @@
-import { Elysia } from "elysia";
+import { AppRouter } from "./server/appRouter";
+import { HelloWorldController } from "./server/controllers/AuthController";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+const PORT = 3001;
+
+const app = new AppRouter();
+app.addController(HelloWorldController);
+app.init(PORT);
 
 console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+  `🦊 Elysia + React is running at ${app.app.server?.hostname}:${app.app.server?.port}`
 );
