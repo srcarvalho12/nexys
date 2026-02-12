@@ -3,12 +3,14 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "build:prod": "bun build ./src/index.ts --compile --minify --outfile app"
   },
   "dependencies": {
     "elysia": "latest",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0",
     "zustand": "^5.0.11"
   },
   "devDependencies": {
